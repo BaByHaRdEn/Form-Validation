@@ -21,43 +21,34 @@
             <h2>Sign Up</h2>
         </div>
         <div id="form">
-        <form action="">
+        <form action="" method="post">
             <div class="form-element">
                 <label for="username">Username</label>
                 <input type="text" name="username" id="username" placeholder="Username..." required>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
             <div class="form-element">
                 <label for="dob">Date of Birth</label>
-                <input type="date" name="dob" id="dob" min="07/10/2002" placeholder="DOB..." required>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <small>Error message</small>
+                <input type="date" name="dob" id="dob" min="07/10/2002" required>
             </div>
             <div class="form-element">
                 <label for="email">Email Address </label>
                 <input type="email" name="email" id="email" placeholder="Email Address..." required>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
             <div class="form-element">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" placeholder="Password..." required>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
+                <i class="fa fa-eye" id="show" style="top:410px;"></i>
                 <small>Error message</small>
             </div>
             <div class="form-element">
                 <label for="confirm">Confirm password</label>
                 <input type="password" name="confirm" id="confirm" placeholder="Confirm Password..." required>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
+                <i class="fa fa-eye" id="cshow" style="top:510px;"></i>
                 <small>Error message</small>
             </div>
-            <input type="submit" value="Submit" class="btn btn-primary">
+            <input type="submit" value="Submit" class="btn btn-primary" id="submit">
             <a href="#">Already have an account? Sign in</a>
         </form>
         
