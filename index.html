@@ -21,31 +21,32 @@
             <h2>Sign Up</h2>
         </div>
         <div id="form">
-        <form action="" method="post">
+        <form action="next.html">
             <div class="form-element">
                 <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Username..." required>
-                <small>Error message</small>
+                <input type="text" name="username" id="username" placeholder="Username...">
+                <small id="errorm">Error message</small>
             </div>
             <div class="form-element">
                 <label for="dob">Date of Birth</label>
-                <input type="date" name="dob" id="dob" min="07/10/2002" required>
+                <input type="date" name="dob" id="dob"  onclick="minValue()">
+                <small>Error message</small>
             </div>
             <div class="form-element">
                 <label for="email">Email Address </label>
-                <input type="email" name="email" id="email" placeholder="Email Address..." required>
+                <input type="email" name="email" id="email" placeholder="Email Address...">
                 <small>Error message</small>
             </div>
             <div class="form-element">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Password..." required>
-                <i class="fa fa-eye" id="show" style="top:410px;"></i>
+                <input type="password" name="password" id="password" placeholder="Password...">
+                <i class="fa fa-eye" id="show" style="top:407px;"></i>
                 <small>Error message</small>
             </div>
             <div class="form-element">
                 <label for="confirm">Confirm password</label>
-                <input type="password" name="confirm" id="confirm" placeholder="Confirm Password..." required>
-                <i class="fa fa-eye" id="cshow" style="top:510px;"></i>
+                <input type="password" name="confirm" id="confirm" placeholder="Confirm Password...">
+                <i class="fa fa-eye" id="cshow" style="top:505px;"></i>
                 <small>Error message</small>
             </div>
             <input type="submit" value="Submit" class="btn btn-primary" id="submit">
@@ -54,6 +55,7 @@
         
     </div>
 </div>
+    </script>
 <script src="index.js"></script>
 </body>
 </html>
