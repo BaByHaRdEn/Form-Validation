@@ -100,4 +100,9 @@ function isEmail(email) {
 function myFunction() {
   window.location.href = "next.html";
 }
-
+document.getElementById('password').addEventListener('focus',()=>{
+	document.getElementById('show').style.visibility="visible"
+})
+document.getElementById('confirm').addEventListener('focus',()=>{
+	document.getElementById('cshow').style.visibility="visible"
+})

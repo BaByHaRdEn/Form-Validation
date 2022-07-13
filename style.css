@@ -133,3 +133,7 @@ a{
     }
 
 }
+#show, #cshow{
+    opacity: 0.5;
+    visibility: hidden;
+}
